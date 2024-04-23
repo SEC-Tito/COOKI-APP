@@ -27,7 +27,7 @@ export class AudioPage implements OnInit {
 
   playAudio1() {
     const audio = this.audioElement.nativeElement as HTMLAudioElement;
-    audio.src = 'assets/audio/Audio1.1.mp3';
+    audio.src = 'assets/audio/Audi4.1.mp3';
     audio.load();
     audio.play();
     console.log({audio});
