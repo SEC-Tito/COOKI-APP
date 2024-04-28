@@ -3,11 +3,11 @@ import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-animal',
-  templateUrl: './animal.page.html',
-  styleUrls: ['./animal.page.scss'],
+  selector: 'app-animal2',
+  templateUrl: './animal2.page.html',
+  styleUrls: ['./animal2.page.scss'],
 })
-export class AnimalPage {
+export class Animal2Page {
   select1Value: string;
   select2Value: string;
   select3Value: string;
@@ -26,9 +26,9 @@ export class AnimalPage {
   async presentAlert() {
     // Definir las respuestas correctas e incorrectas
     const correctAnswer1 = 'Sky1';
-    const correctAnswer2 = 'Green2';
-    const correctAnswer3 = 'Orange3';
-    const correctAnswer4 = 'Purple4';
+    const correctAnswer2 = 'Bronw2';
+    const correctAnswer3 = 'Aqua3';
+    const correctAnswer4 = 'Pink4';
     console.log('Valor seleccionado 1:', this.select1Value);
     console.log('Valor seleccionado 2:', this.select2Value);
     console.log('Valor seleccionado 3:', this.select3Value);
@@ -73,9 +73,9 @@ export class AnimalPage {
           cssClass: 'secondary'
         },
         {
-          text: 'Seguir q(≧▽≦q)',
+          text: 'Volver al menu ;)',
           handler: () => {
-            this.router.navigateByUrl('/animal2');
+            this.router.navigateByUrl('/menu');
           }
         }
       ]

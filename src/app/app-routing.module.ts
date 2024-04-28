@@ -75,6 +75,10 @@ const routes: Routes = [
     path: 'audio5',
     loadChildren: () => import('./audio5/audio5.module').then( m => m.Audio5PageModule)
   },
+  {
+    path: 'animal2',
+    loadChildren: () => import('./animal2/animal2.module').then( m => m.Animal2PageModule)
+  },
 ];
 
 @NgModule({
